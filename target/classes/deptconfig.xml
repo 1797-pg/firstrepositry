@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean class="com.tyss.springcore.Department" id="dept" autowire-candidate="false">
+    <property name="did" value="10"></property>
+    <property name="dname" value="sales"></property>
+    </bean>
+    
+    <bean class="com.tyss.springcore.Department" id="dept2" autowire-candidate="false">
+    <property name="did" value="20"></property>
+    <property name="dname" value="testing"></property>
+    </bean>
+    
+    <bean class="com.tyss.springcore.Department" id="dept3">
+    <property name="did" value="10"></property>
+    <property name="dname" value="development"></property>
+    </bean>
+    </beans>
